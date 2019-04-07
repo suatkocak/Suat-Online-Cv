@@ -1,0 +1,154 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    background-color: red;
+}
+
+@media screen and (max-width: 585px) {
+    #wrapper {
+        flex-direction: column;
+    }
+
+    #right-column {
+        flex-grow: 1;
+    }
+
+}
+
+.column {
+    flex: 1;
+    height: 100%;
+}
+
+#wrapper #left-column {
+    flex-grow: 1;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /*color: #6899D3;*/
+    color: #ddd;
+
+}
+
+#wrapper #left-column #logo {
+    /*margin: 5% auto;*/
+    align-self: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#wrapper #left-column #logo img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #47036F;
+}
+
+#wrapper #right-column {
+    flex-grow: 4;
+    background-color: yellow;
+    padding: 25px;
+}
+
+#wrapper #right-column header {
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+
+#wrapper #right-column header .name {
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+#wrapper #right-column header .name b {
+    color: #274E7D;
+}
+
+#wrapper #right-column .content-box .header {
+    border-bottom: 2px solid #274E7D;
+    padding-bottom: 15px;
+}
+
+#wrapper #right-column .content-box .header img {
+    margin-right: 10px;
+}
+
+.content-box {
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.content-box .header {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.content-box .content {
+    margin-top: 10px;
+}
+
+.certification {
+    font-size: 18px;
+    border: 1px solid #274E7D;
+    padding: 10px;
+}
+
+
+
+#references-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
+}
+
+#references-container .reference {
+}
+
+#wrapper #left-column .content-box .header {
+    background-color: #ddd;
+    box-shadow: #1300ff;
+    color: #274E7D;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#wrapper #left-column .content-box .content {
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 15px;
+}
+
+ul li .name {
+    font-weight: bold;
+    color: #6899D3;
+}
+
+#left-column a {
+    color: white;
+}
+
+#left-column a:hover {
+    color: #6899D3;
+}
