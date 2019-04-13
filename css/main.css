@@ -8,7 +8,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: stretch;
-    background-color: red;
+    background-color: blue;
 }
 
 @media screen and (max-width: 585px) {
@@ -29,7 +29,7 @@
 
 #wrapper #left-column {
     flex-grow: 1;
-    background-color: red;
+    background-color: blue;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -54,7 +54,7 @@
 
 #wrapper #right-column {
     flex-grow: 4;
-    background-color: yellow;
+    background-color: lightgray;
     padding: 25px;
 }
 
